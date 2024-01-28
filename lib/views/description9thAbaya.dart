@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 
-class ProductInfo1 extends StatelessWidget {
-  const ProductInfo1({Key? key});
+class ProductInfo9 extends StatelessWidget {
+  const ProductInfo9({Key? key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Column(children: [
+        child: Column(
+          children: [
      const     SizedBox(height: 30),
         const  ListTile(
             tileColor: Colors.white,

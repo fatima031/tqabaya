@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tahirqadriabayat/views/cart.dart';
+// import 'package:tahirqadriabayat/views/cart.dart';
 import 'package:tahirqadriabayat/views/home.dart';
 import 'package:tahirqadriabayat/views/notification.dart';
 import 'package:tahirqadriabayat/views/profile.dart';
@@ -19,7 +19,7 @@ class _BottomNavigation_viewState extends State<BottomNavigation_view> {
       child: Home(),
     ),
     Center(
-      child: cart_view(),
+      child: Text("abc")
     ),
     Center(
       child: Notification_View(),

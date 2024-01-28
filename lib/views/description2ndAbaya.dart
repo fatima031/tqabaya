@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class ProductInfo1 extends StatelessWidget {
-  const ProductInfo1({Key? key});
+class ProductInfo2 extends StatelessWidget {
+  const ProductInfo2({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class ProductInfo1 extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(30),
               child: Image.asset(
-                "assets/images/Front Open abaya.jpg",
+                "assets/images/2f.jpg",
                 fit: BoxFit.cover,
               ),
             ),
@@ -105,7 +105,7 @@ class ProductInfo1 extends StatelessWidget {
                                 Column(
                                   children: [
                                     Image.asset(
-                                      "assets/images/Front Open abaya.jpg",
+                                      "assets/images/2f.jpg",
                                       width: 80,
                                       height: 60,
                                     ),
@@ -137,7 +137,7 @@ class ProductInfo1 extends StatelessWidget {
                       ),
                       ListTile(
                         leading: Image.asset(
-                          "assets/images/Front Open abaya.jpg",
+                          "assets/images/2f.jpg",
                           width: 200,
                           height: 180,
                         ),
@@ -204,10 +204,14 @@ class ProductInfo1 extends StatelessWidget {
                               ),
                             ],
                           ),
+                          
                         ),
+                        
                       ),
-                    ]),
+                    ]
+                    ),
               ))
+              
         ]),
       ),
     );
