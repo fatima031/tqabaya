@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:tahirqadriabayat/views/descriptio11thAbaya.dart';
 import 'package:tahirqadriabayat/views/description10thAbaya.dart';
@@ -21,337 +23,421 @@ class front_open extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBody: true,
+        extendBody: true,
         body: SafeArea(
             child: SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Container(
-            child: Column(children: [
-          Row(
-            children: [
-              InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo1()));
-                },
-                child: Container(
-                  
-                  child: Column(
-                    children: [
-                      Image.asset(
-                      
-                        "assets/images/Front Open abaya.jpg",
-                       
-                        fit: BoxFit.cover,
-                      ),
-                      Container(
-                        child: Text("data"),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo2()));
-                },
-                child: Container(
-                  child: Column(
-                    children: [
-                      Image.asset(
-                        "assets/images/2f.jpg",
-                        fit: BoxFit.cover,
-                      ),
-                      InkWell(
-                        onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo3()));
-                },
-                        child: Container(
-                          child: Column(
-                    children: [
-                      Image.asset(
-                        "assets/images/3f.jpg",
-                        fit: BoxFit.cover,
-                      ),
-                      Container(
-                        child: Text("data"),
-                      )
-                    ],
-                  ),
-
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo4()));
-                },
-                child: Container(
-                  child: Column(
-                    children: [
-                      Image.asset(
-                        "assets/images/4f.jpg",
-                        fit: BoxFit.cover,
-                      ),
-                      Container(
-                        child: Text("data"),
-                      )
-                    ],
-                  ),
-                ),
-              ),
-              InkWell(
-                onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo5()));
-                },
-                child: Container(
-                  child: Row(
-                    children: [
-                      Container(
-                        child: Column(
-                          children: [
-                            Image.asset(
-                              "assets/images/5f.jpg",
-                              fit: BoxFit.cover,
-                            ),
-                            Container(
-                              child: Text("data"),
-                            )
-                          ],
-                        ),
-                      ),
-                      InkWell(
-                        onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo6()));
-                },
-                        child: Container(
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                "assets/images/6f.jpg",
-                                fit: BoxFit.cover,
-                              ),
-                              Container(
-                                child: Text("data"),
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                      InkWell(
-                        onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo7()));
-                },
-                        child: Container(
-                          child: Column(
-                            children: [
-                              Image.asset(
-                                "assets/images/7f.jpg",
-                                fit: BoxFit.cover,
-                              ),
-                              Container(
-                                child: Text("data"),
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              )
-            ],
-          ),
-          Row(
-            children: [
-            InkWell(
-              onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo8()));
-                },
-              child: Container(
-                child: Column(
-                  children: [
-                    Image.asset(
-                      "assets/images/8f.jpg",
-                      fit: BoxFit.cover,
-                    ),
-                    Container(
-                      child: Text("data"),
-                    )
-                  ],
-                ),
-              ),
-            ),
-            InkWell(
-              onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo9()));
-                },
-              child: Container(
-                child: Column(
-                  children: [
-                    Image.asset(
-                      "assets/images/9f.jpg",
-                      fit: BoxFit.cover,
-                    ),
-                    Container(
-                      child: Text("data"),
-                    )
-                  ],
-                ),
-              ),
-            ),
-            InkWell(
-              onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo10()));
-                },
-              child: Container(
-                child: Column(
-                  children: [
-                    Image.asset(
-                      "assets/images/10f.jpg",
-                      fit: BoxFit.cover,
-                    ),
-                    Container(
-                      child: Text("data"),
-                    )
-                  ],
-                ),
-              ),
-            ),
-            InkWell(
-              onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo11()));
-                },
-              child: Container(
-                child: Row(
-                  children: [
-                    Container(
+          scrollDirection: Axis.horizontal,
+          child: SingleChildScrollView(
+            scrollDirection: Axis.vertical,
+            child: Container(
+                child: Column(children: [
+              Row(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ProductInfo1()));
+                    },
+                    child: Container(
                       child: Column(
                         children: [
                           Image.asset(
-                            "assets/images/11f.jpg",
-                            fit: BoxFit.cover,
+                            "assets/images/Front Open abaya.jpg",
+                            height: 200,
+                            width: 200,
                           ),
                           Container(
-                            child: Text("data"),
+                            child: Text("desc 1"),
                           )
                         ],
                       ),
                     ),
-                    InkWell(
-                      onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo12()));
-                },
-                      child: Container(
-                        child: Column(
-                          children: [
-                            Image.asset(
-                              "assets/images/12f.jpg",
-                              fit: BoxFit.cover,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ProductInfo2()));
+                    },
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            "assets/images/2f.jpg",
+                            height: 200,
+                            width: 200,
+                            fit: BoxFit.cover,
+                          ),
+                          Container(
+                            child: Text("desc galti"),
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ProductInfo3()));
+                            },
+                            child: Container(
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/images/3f.jpg",
+                                    height: 200,
+                                    width: 200,
+                                    fit: BoxFit.cover,
+                                  ),
+                                  Container(
+                                    child: Text("desc 2"),
+                                  )
+                                ],
+                              ),
                             ),
-                            Container(
-                              child: Text("data"),
-                            )
-                          ],
-                        ),
+                          )
+                        ],
                       ),
                     ),
-                    InkWell(
-                      onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo13()));
-                },
-                      child: Container(
-                        child: Column(
-                          children: [
-                            Image.asset(
-                              "assets/images/13f.jpg",
-                              fit: BoxFit.cover,
-                            ),
-                            Container(
-                              child: Text("data"),
-                            )
-                          ],
-                        ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ProductInfo4()));
+                    },
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            "assets/images/4f.jpg",
+                            height: 200,
+                            width: 200,
+                            fit: BoxFit.cover,
+                          ),
+                          Container(
+                            child: Text("desc 3"),
+                          )
+                        ],
                       ),
                     ),
-                  ],
-                ),
-                
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ProductInfo5()));
+                    },
+                    child: Container(
+                      child: Row(
+                        children: [
+                          Container(
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "assets/images/5f.jpg",
+                                  height: 200,
+                                  width: 200,
+                                  fit: BoxFit.cover,
+                                ),
+                                Container(
+                                  child: Text("desc 4"),
+                                )
+                              ],
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ProductInfo6()));
+                            },
+                            child: Container(
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/images/6f.jpg",
+                                    height: 200,
+                                    width: 200,
+                                    fit: BoxFit.cover,
+                                  ),
+                                  Container(
+                                    child: Text("desc 5"),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 20,
+                          ),
+                          InkWell(
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ProductInfo7()));
+                            },
+                            child: Container(
+                              child: Column(
+                                children: [
+                                  Image.asset(
+                                    "assets/images/7f.jpg",
+                                    height: 200,
+                                    width: 200,
+                                    fit: BoxFit.cover,
+                                  ),
+                                  Container(
+                                    child: Text("desc 6"),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                ],
               ),
-            ),
-          ]
+              Row(children: [
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ProductInfo8()));
+                  },
+                  child: Container(
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "assets/images/8f.jpg",
+                          height: 200,
+                          width: 200,
+                          fit: BoxFit.cover,
+                        ),
+                        Container(
+                          child: Text("desc 7"),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ProductInfo9()));
+                  },
+                  child: Container(
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "assets/images/9f.jpg",
+                          height: 200,
+                          width: 200,
+                          fit: BoxFit.cover,
+                        ),
+                        Container(
+                          child: Text("desc 8"),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ProductInfo10()));
+                  },
+                  child: Container(
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          "assets/images/10f.jpg",
+                          height: 200,
+                          width: 200,
+                          fit: BoxFit.cover,
+                        ),
+                        Container(
+                          child: Text("desc 9"),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 20,
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ProductInfo11()));
+                  },
+                  child: Container(
+                    child: Row(
+                      children: [
+                        Container(
+                          child: Column(
+                            children: [
+                              Image.asset(
+                                "assets/images/11f.jpg",
+                                height: 200,
+                                width: 200,
+                                fit: BoxFit.cover,
+                              ),
+                              Container(
+                                child: Text("desc 10"),
+                              )
+                            ],
+                          ),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ProductInfo12()));
+                          },
+                          child: Container(
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "assets/images/12f.jpg",
+                                  height: 200,
+                                  width: 200,
+                                  fit: BoxFit.cover,
+                                ),
+                                Container(
+                                  child: Text("desc 11"),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => ProductInfo13()));
+                          },
+                          child: Container(
+                            child: Column(
+                              children: [
+                                Image.asset(
+                                  "assets/images/13f.jpg",
+                                  height: 200,
+                                  width: 200,
+                                  fit: BoxFit.cover,
+                                ),
+                                Container(
+                                  child: Text("desc 12"),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 20,
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ]),
+              Row(
+                children: [
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ProductInfo14()));
+                    },
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            "assets/images/14f.jpg",
+                            height: 200,
+                            width: 200,
+                            fit: BoxFit.cover,
+                          ),
+                          Container(
+                            child: Text("desc 13"),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  InkWell(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ProductInfo15()));
+                    },
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            "assets/images/15f.jpg",
+                            height: 200,
+                            width: 200,
+                            fit: BoxFit.cover,
+                          ),
+                          Container(
+                            child: Text("desc 14"),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              )
+            ])),
           ),
-          Row(
-            children: [
-              InkWell(
-                      onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo14()));
-                },
-                      child: Container(
-                        child: Column(
-                          children: [
-                            Image.asset(
-                              "assets/images/14f.jpg",
-                              fit: BoxFit.cover,
-                            ),
-                            Container(
-                              child: Text("data"),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-                    InkWell(
-                      onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>ProductInfo15()));
-                },
-                      child: Container(
-                        child: Column(
-                          children: [
-                            Image.asset(
-                              "assets/images/15f.jpg",
-                              fit: BoxFit.cover,
-                            ),
-                            Container(
-                              child: Text("data"),
-                            )
-                          ],
-                        ),
-                      ),
-                    ),
-
-            ],
-          )
-          
-        ]
-        )
-        ),
-      ),
-    )));
+        )));
   }
 }
 
 // Card() {
-  
+
 //   Container(
 //     child: Column(
 //       children: [
@@ -367,3 +453,23 @@ class front_open extends StatelessWidget {
 //   );
 
 // }
+
+abayaCard() {
+  return InkWell(
+    onTap: () { },
+    child: Container(
+      child: Column(
+        children: [
+          Image.asset(
+            "assets/images/Front Open abaya.jpg",
+            height: 200,
+            width: 200,
+          ),
+          Container(
+            child: Text("desc 1"),
+          )
+        ],
+      ),
+    ),
+  );
+}
