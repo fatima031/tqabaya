@@ -428,6 +428,7 @@ class front_open extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Card()
                 ],
               )
             ])),
@@ -456,20 +457,28 @@ class front_open extends StatelessWidget {
 
 abayaCard() {
   return InkWell(
-    onTap: () { },
-    child: Container(
-      child: Column(
-        children: [
-          Image.asset(
-            "assets/images/Front Open abaya.jpg",
-            height: 200,
-            width: 200,
-          ),
-          Container(
-            child: Text("desc 1"),
-          )
-        ],
-      ),
-    ),
-  );
+                    onTap: () {
+                      Navigator.push(
+                          context as BuildContext,
+                          MaterialPageRoute(
+                              builder: (context) => ProductInfo1()));
+                    },
+                    child: Container(
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            "assets/images/Front Open abaya.jpg",
+                            height: 200,
+                            width: 200,
+                          ),
+                          Container(
+                            child: Text("desc 1"),
+                          )
+                          ]
+                          )
+                          )
+                          );
 }
+                    
+
+
